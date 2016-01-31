@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice 3</title>
+    <script>
+        var array = ['hello', 34, true, false, 'goodbye', 56, 12, '25', true];
+        var str = [];
+        var num = [];
+        var boo = [];
+        var total = [];
+
+
+    function typeSorter(myArray){
+        for (var i = 0; i<myArray.length; i++){
+            if (typeof myArray[i] == "string"){
+                str += myArray[i] + " ";
+            }else if (typeof myArray[i] == "number"){
+                num += myArray[i] + " ";
+            }else {
+                boo += myArray[i] + " ";
+            }
+        }
+        total = str + num + boo;
+    }
+        typeSorter(array);
+        console.log(total);
+
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
