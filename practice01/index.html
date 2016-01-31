@@ -5,16 +5,20 @@
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
     <title>Bigger Words</title>
     <script>
-        var familyArray = ['Joshua', 'Laura', "Ted", 'John,', 'Kevin'];
+        var familyArray = ['Joshua', 'Laura', 'Ted', 'John', 'Kevin'];
         var bigArray = [];
+
         function biggerWords(string,familyArray) {
             for(var i = 0; i < familyArray.length; i++){
                 if (familyArray[i].length > string.length){
                     bigArray.push(familyArray[i]);
                 }
             }
-            console.log(bigArray);
+
         }
+        //This needs to be outside the loop!!
+        biggerWords('Anne', familyArray);
+        console.log(bigArray);
 
     </script>
 </head>
