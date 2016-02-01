@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice Problem 4</title>
+    <script>
+        var array = ['mouse', 'cat', 'dog', 'human'];
+
+        function sort(myArray){
+            do {
+                var swapped = false;
+                for (var i = 0; i < myArray.length; ++i){
+                    if (myArray[i] > myArray[i+1]) {
+                        var temp = myArray[i];
+                        myArray[i] = myArray[i+1];
+                        myArray[i+1] = temp;
+                        swapped = true;
+                        console.log(myArray);
+                    }
+                }
+            }
+            while (swapped == true)
+        };
+
+        var x = sort(array);
+        console.log(x);
+
+
+
+    </script>
+
+
+
+</head>
+<body>
+
+</body>
+</html>
