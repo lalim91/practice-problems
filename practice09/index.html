@@ -6,13 +6,32 @@
     <script>
         var myArray = ['cat','caterpillar','whale','accurate','smile','cactus','cute'];
         var myString = 'cat';
-        function fittingWords(string,array){
-            for (var i = 0; i < array.length; i++){
-                for(var j = 0; j < array[i].length; j++){
-                 console.log(array[i][j]);
-                }
-            }
-        }
+        var newArray = [];
+
+        function fittingWords(string,array) {
+            var string_storage_array = [];
+            var temp = "";
+            for (var i = 0; i < array.length; i++) {
+                if (string_storage_array.length <= array[i].length) {
+//
+//
+//
+//
+//
+//
+//
+// for (var a = 0; a < string.length; a++) {
+//                string_storage_array.push(string[a]);
+//            }
+//
+//            for (var i = 0; i < array.length; i++) {
+//                if (string_storage_array.length <= array[i].length) {
+//                    for (var j = 0; j < array[i].length; j++) {
+//
+//                    }
+//                }
+//            }
+
 
         fittingWords(myString,myArray);
     </script>
