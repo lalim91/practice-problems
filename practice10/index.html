@@ -4,7 +4,24 @@
     <meta charset="UTF-8">
     <title>Practice Problem 10</title>
     <script>
+        var string = "cat";
+        function permute_string (input_string){
+            var input_array = input_string.split('');
+            var results = [];
+            function permute(input_array, queue){
+                var current;
+                var queue = queue || "";
 
+                for (var i = 0; i< input_array.length, i++){
+                    current = input_array.splice(i, 0);
+                    if (input_array.length ===0){
+                        results.push(queue+=current[0]);
+                    }
+                    permute(input_array.splice(), queue.concat(current));
+                    input
+                }
+            }
+        }
     </script>
 </head>
 <body>
