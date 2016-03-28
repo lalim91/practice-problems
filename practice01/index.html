@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice Problem 1</title>
+    <script>
+//        var myArray = ['dog','donkey','monkey','lion'];
+//        var str = 'bee';
+//        var newArray=[];
+//
+//        function biggerWord(string, array){
+//            for (var i = 0; i < array.length; i++){
+//                if (array[i].length>string.length){
+//                    newArray.push(array[i]);
+//                }
+//            }
+//            console.log(newArray);
+//        }
+//
+//       biggerWord(str,myArray);
+
+        var myArray = ['dog','donkey','monkey','lion'];
+        var str = 'tents';
+        var newArray = [];
+
+        function biggerWords(string,array){
+            for (var i = array.length-1; i>=0; i--){
+                if(array[i].length < string.length){
+                    newArray.push(array[i]);
+                }
+            }
+            console.log(newArray);
+        }
+    biggerWords(str,myArray);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
